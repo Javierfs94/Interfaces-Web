@@ -35,15 +35,19 @@ window.onload = function() {
         contexto.closePath();
 
         // Frutas
-        for (let i = 2; i <= 10; i++) {
+        for (let i = 2; i <= 3; i++) {
             contexto.beginPath();
             contexto.arc(50 * i, 50, 10, 0, Math.PI * 2, false);
             contexto.fillStyle = 'pink';
             contexto.fill();
             contexto.closePath();
-
         }
 
+        contexto.beginPath();
+        contexto.arc(200, 50, 15, 0, Math.PI * 2, false);
+        contexto.fillStyle = 'pink';
+        contexto.fill();
+        contexto.closePath();
 
     }
 }
