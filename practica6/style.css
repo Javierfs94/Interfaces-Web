@@ -1,6 +1,10 @@
 header{
-background-color: ;
+background-color: aqua;
+border: 1px solid black;
+}
 
+nav{
+    border: 1px solid black;
 }
 
 nav>ul>{
@@ -23,7 +27,11 @@ nav>ul>li>a{
     color: white;
 }
 
-
+#noticias>section>article{
+    border: 1px outset black;
+    margin: 5px;
+    padding: 5px;
+}
 
 body{
     background-color: rgba(210, 221, 231, 0.842);
@@ -32,9 +40,11 @@ body{
 }
 
 aside>div>a>img{
-    width: 20%;
-    height:  20%;
+    width: 200px;
+    height:  150px;
 }
+
+
 
 footer{
     background-color: rgb(95, 156, 235);
@@ -44,4 +54,5 @@ footer>p{
     font-size: 30px;
     font-family: sans-serif;
     text-align: center;
+    border: 1px solid black;
 }
