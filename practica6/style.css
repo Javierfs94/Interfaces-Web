@@ -1,0 +1,47 @@
+header{
+background-color: ;
+
+}
+
+nav>ul>{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    /* list-style: none; */
+}
+
+nav>ul>li{
+    background-color: blue;
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+body{
+    background-color: rgba(210, 221, 231, 0.842);
+    font: 10px;
+    font-family: sans-serif;
+}
+
+aside>div>a>img{
+    width: 20%;
+    height:  20%;
+}
+
+footer{
+    background-color: rgb(95, 156, 235);
+}
+
+footer>p{       
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
