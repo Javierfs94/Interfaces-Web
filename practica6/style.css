@@ -14,6 +14,7 @@ nav>ul>{
     /* list-style: none; */
 }
 
+
 nav>ul>li{
     background-color: blue;
     width: 25%;
@@ -27,11 +28,6 @@ nav>ul>li>a{
     color: white;
 }
 
-#noticias>section>article{
-    border: 1px outset black;
-    margin: 5px;
-    padding: 5px;
-}
 
 body{
     background-color: rgba(210, 221, 231, 0.842);
@@ -39,11 +35,27 @@ body{
     font-family: sans-serif;
 }
 
+main{
+    width: 70%;
+}
+
+article{
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #E43838;
+}
+
+aside{
+    width: 20%;
+    padding: 10px;
+    border-left: 2px solid blue;
+}
+
 aside>div>a>img{
     width: 200px;
     height:  150px;
 }
-
 
 
 footer{
