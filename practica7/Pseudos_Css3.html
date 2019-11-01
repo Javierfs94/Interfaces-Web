@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tutorial de pseudo-elementos y  pseudo-clases">
+    <meta name="author" content="Francisco Javier Frías Serrano" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo elementos y clases</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <h1>TUTORIAL CSS3 - 2019/2020</h1>
+    <h2><img src="icon/language-css3.svg"></h2>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <h2>PSEUDO-ELEMENTOS Y PSEUDO-CLASES</h2>
+        <h3>Resultado de la combinación de todos los ejercicios de la práctica 7 de los alumnos de 2ºDAW 2019-2020</h3>
+
+        <section>
+            <article>
+                <h3>::first-line</h3>
+                <p>Se utiliza para añadir un estilo especial a la primera línea de un texto.</p>
+                <p><pre>p::first-line {
+                    color: #ff0000;
+                    font-variant: small-caps;
+                }</pre>
+                </p>
+                <div id="pseudo-firstline">
+                    <p>Esto es un ejemplo de prueba de pseudo-elemento de first-line. La primera línea del párrafo será marcada el roja y el resto no. ahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasfahbkbasf
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <h3>::before</h3>
+                <p>Se puede utilizar para insertar un cierto contenido antes de que el contenido de un elemento.</p>
+                <div id="pseudo-before">Ejemplo</div>
+            </article>
+
+            <article>
+                <h3>::first-letter</h3>
+                <p>Se utiliza para añadir un estilo especial a la primera letra de un texto.</p>
+                <div id="pseudo-firstletter">Ejemplo</div>
+            </article>
+
+            <article>
+                <h3>::after</h3>
+                <p>Se puede utilizar para insertar algún contenido después de que el contenido de un elemento.</p>
+                <div id="pseudo-after">Ejemplo</div>
+            </article>
+
+            <article>
+                <h3>::selection</h3>
+                <p>Coincide con la porción de un elemento que es seleccionado por un usuario.</p>
+                <div id="pseudo-selection">Ejemplo</div>
+            </article>
+
+
+            <!--  
+                Ejemplo
+                 <article>
+                <h3>Propiedad</h3>
+                <p>Descripción. Explicación de la regla CSS explicada.</p>
+                <div>Ejemplo</div>
+            </article>
+         -->
+        </section>
+
+        <footer>
+            <div>Francisco Javier Frías Serrano</div>
+            <a href="https://twitter.com/javifs94" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+            <a href="https://github.com/Javierfs94" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+        </footer>
+
+</body>
+
+</html
