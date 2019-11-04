@@ -31,8 +31,7 @@
         </ul>
     </nav>
     <main>
-        <h2>PSEUDO-ELEMENTOS Y PSEUDO-CLASES</h2>
-        <h3>Resultado de la combinación de todos los ejercicios de la práctica 7 de los alumnos de 2ºDAW 2019-2020</h3>
+        <h2>PSEUDO-ELEMENTOS</h2>
 
         <section>
             <article>
@@ -41,6 +40,7 @@
                 <p><pre>p::first-line {
                     color: #ff0000;
                     font-variant: small-caps;
+                    text-align: left;
                 }</pre>
                 </p>
                 <div id="pseudo-firstline">
@@ -52,36 +52,546 @@
             <article>
                 <h3>::before</h3>
                 <p>Se puede utilizar para insertar un cierto contenido antes de que el contenido de un elemento.</p>
-                <div id="pseudo-before">Ejemplo</div>
+                <p>
+                    <pre>#pseudo-before>p::before {
+                        content: url(../icon/libro.png);
+                    }</pre>
+                </p>
+                <div id="pseudo-before">
+                    <p>Ejemplo de pseudo-elemento before.</p>
+                </div>
             </article>
 
             <article>
                 <h3>::first-letter</h3>
                 <p>Se utiliza para añadir un estilo especial a la primera letra de un texto.</p>
-                <div id="pseudo-firstletter">Ejemplo</div>
+                <p>
+                    <pre>#pseudo-firstletter>p::first-letter {
+                        color: #ff0000;
+                        font-size: 200%;
+                    }</pre>
+                </p>
+                <div id="pseudo-firstletter">
+                    <p>Ejemplo de primera letra</p>
+                </div>
             </article>
 
             <article>
                 <h3>::after</h3>
                 <p>Se puede utilizar para insertar algún contenido después de que el contenido de un elemento.</p>
-                <div id="pseudo-after">Ejemplo</div>
+                <p>
+                    <pre>#pseudo-after>p::after {
+                        content: url(../icon/libro.png);
+                    }</pre>
+                </p>
+                <div id="pseudo-after">
+                    <p>Ejemplo de pseudo-elemento after.</p>
+                </div>
             </article>
 
             <article>
                 <h3>::selection</h3>
                 <p>Coincide con la porción de un elemento que es seleccionado por un usuario.</p>
-                <div id="pseudo-selection">Ejemplo</div>
+                <p>
+                    <pre>#pseudo-selection>p::selection {
+                        color: #ff0000;
+                        background-color: rgb(231, 231, 19);
+                    }</pre>
+                </p>
+                <div id="pseudo-selection">
+                    <p>Ejemplo de selection. Seleccione este texto</p>
+                </div>
             </article>
 
+        </section>
 
-            <!--  
-                Ejemplo
-                 <article>
-                <h3>Propiedad</h3>
-                <p>Descripción. Explicación de la regla CSS explicada.</p>
-                <div>Ejemplo</div>
+        <h2>PSEUDO-CLASES</h2>
+
+        <section>
+            <article>
+                <h3>:active</h3>
+                <p>Selecciona el link activo</p>
+                <p>
+                    <pre>#pseudo-active>a:active {
+                            color: #d5e40d;
+                        }</pre>
+                </p>
+                <div id="pseudo-active">
+                    <a href="#">Mantén pinchado aquí</a>
+                </div>
             </article>
-         -->
+
+            <article>
+                <h3>:checked</h3>
+                <p>Selecciona cada elemento checked de la etiqueta input
+                </p>
+                <p>
+                    <pre>#pseudo-checked>form>input:checked {
+                            height: 25px;
+                            width: 25px;
+                        }</pre>
+                </p>
+                <div id="pseudo-checked">
+                    <form action="">
+                        <input type="radio" checked="checked" value="hombre" name="genero"> Hombre<br>
+                        <input type="radio" value="mujer" name="genero"> Mujer<br>
+                        <input type="checkbox" checked="checked" value="bici"> Tenbo bici<br>
+                        <input type="checkbox" value="coche"> Tengo coche
+                    </form>
+                </div>
+            </article>
+
+            <article>
+                <h3>:enabled y :disabled</h3>
+                <p>Selecciona cada elemento enabled y disabled de la etiqueta input
+                </p>
+                <p>
+                    <pre>#pseudo-enabled-disabled>form>input[type=text]:disabled {
+                            background: #9b9a9a;
+                        }
+                        
+                        #pseudo-enabled-disabled>form>input[type=text]:enabled {
+                            background: #f1f106;
+                        }
+                        </pre>
+                </p>
+                <div id="pseudo-enabled-disabled">
+                    <form action="">
+                        Nombre: <input type="text" value="Javier"><br> Apellido: <input type="text" value="Frías"><br> País: <input type="text" disabled="disabled" value="España">
+                    </form>
+                </div>
+            </article>
+
+            <article>
+                <h3>:empty</h3>
+                <p>Selecciona cada elemento que no tenga un hijo
+                </p>
+                <p>
+                    <pre>#pseudo-empty>p:empty {
+                            width: 100px;
+                            height: 20px;
+                            background: #ff0000;
+                        }
+                        </pre>
+                </p>
+                <div id="pseudo-empty">
+                    <p></p>
+                    <p>Un párrafo</p>
+                    <p>Otro párrafo</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:first-child</h3>
+                <p>Selecciona cada elemento que hay en el primer hijo de su padre
+                </p>
+                <p>
+                    <pre>#pseudo-first-child p:first-child {
+                            background-color: rgb(240, 240, 13);
+                        }</pre>
+                </p>
+                <div id="pseudo-first-child">
+                    <p>Primer texto hijo</p>
+                    <p>Segundo texto hijo</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:first-of-type</h3>
+                <p>Selecciona cada elemento que sea el primero de su padre
+                </p>
+                <p>
+                    <pre>#pseudo-first-of-type>p:first-of-type {
+                        background-color: rgb(236, 236, 16);
+                    }</pre>
+                </p>
+                <div id="pseudo-first-of-type">
+                    <p>Primer texto</p>
+                    <p>Segundo texto</p>
+                    <p>Tercer texto</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:focus</h3>
+                <p>Selecciona el elemento input que está focus
+                </p>
+                <p>
+                    <pre>#pseudo-focus>form>input:focus {
+                        background-color: rgb(240, 240, 13);
+                    }</pre>
+                </p>
+                <div id="pseudo-focus">
+                    <form>
+                        Nombre: <input type="text" name="nombre"><br> Apellido: <input type="text" name="apellido">
+                    </form>
+                </div>
+            </article>
+
+            <article>
+                <h3>:hover</h3>
+                <p>Selecciona los links ap pasar el ratón por encima
+                </p>
+                <p>
+                    <pre>#pseudo-hover>a:hover {
+                        background-color: rgb(240, 240, 13);
+                    }</pre>
+                </p>
+                <div id="pseudo-hover"><a href="#">Pasa el ratón por aquí</a>
+                </div>
+            </article>
+
+            <article>
+                <h3>:in-range</h3>
+                <p>Selecciona todos los elementos input con unos valores dentro de rango
+                </p>
+                <p>
+                    <pre></pre>
+                </p>
+                <div id="pseudo-in-range">
+                    <input type="number" min="5" max="10" value="7">
+                    <p>Intenta escribir un número más bajo de 5 y mayor que 10.</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:invalid</h3>
+                <p>Selecciona todos los elementos input con un valor inválido
+                </p>
+                <p>
+                    <pre>#pseudo-invalid>input:invalid {
+                            border: 2px solid rgb(243, 8, 8);
+                        }</pre>
+                </p>
+                <div id="pseudo-invalid">
+                    <input type="email" value="prueba@ejemplo.com">
+                    <p>Intenta poner un correo inválido</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:lang(ho)</h3>
+                <p>Selecciona cada elemento con un atributo lang cuyo valor empiece con "ho"
+                    <p>
+                        <pre>#pseudo-lang>p:lang(ho) {
+                                border: 2px solid rgb(240, 240, 13);
+                            }</pre>
+                    </p>
+                    <div id="pseudo-lang">
+                        <p lang="ho">¡Hola mundo!</p>
+                    </div>
+            </article>
+
+            <article>
+                <h3>:last-child </h3>
+                <p>Especificar un color de fondo para el elemento p que es el último hijo de su padre</p>
+                <p>
+                    <pre>#pseudo-last-child>p:last-child {
+                            background: #ff0000;
+                        }</pre>
+                </p>
+                <div id="pseudo-last-child">
+                    <p>Primer párrafo</p>
+                    <p>Segundo párrafo</p>
+                    <p>Tercer párrafo</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:last-of-type</h3>
+                <p>Especificar un color de fondo para el último elemento p de su padre
+                </p>
+                <p>
+                    <pre>#pseudo-last-of-type>p:last-of-type {
+                            background: #ff0000;
+                        }</pre>
+                </p>
+                <div id="pseudo-last-of-type">
+                    <h3>Cabecera</h1>
+                        <p>Primer párrafo</p>
+                        <p>Segundo párrafo</p>
+                        <p>Tercer párrafo</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:link</h3>
+                <p>Seleccionar y estilo de los enlaces no visitados
+                </p>
+                <p>
+                    <pre>#pseudo-link>a:link {
+                            border: 2px solid rgb(240, 240, 13);
+                        }</pre>
+                </p>
+                <div id="pseudo-link">
+                    <a href="#">link1</a>
+                    <a href="#">link2</a></div>
+            </article>
+
+            <article>
+                <h3>:not(p)</h3>
+                <p>Establecer un color de fondo para todos los elementos que no son un elemento p </p>
+                <p>
+                    <pre>#pseudo-not>:not(p) {
+                            color: #ff0000;
+                        }</pre>
+                </p>
+                <div id="pseudo-not">
+                    <p>Esto es un párrafo</p>
+                    <a href="#" target="_blank">Enlace</a></div>
+            </article>
+
+            <article>
+                <h3>:nth-child(2)</h3>
+                <p>Especificar un color de fondo para cada elemento p que es el segundo hijo de su padre
+                </p>
+                <p>
+                    <pre>#pseudo-nth-child>p:nth-child(2) {
+                            background: rgb(231, 17, 17);
+                        }</pre>
+                </p>
+                <div id="pseudo-nth-child">
+                    <p>Primer párrafo</p>
+                    <p>Segundo párrafo</p>
+                    <p>Tercer párrafo</p>
+                    <p>Cuarto párrafo</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:nth-last-child(2)</h3>
+                <p>Especificar un color de fondo para cada elemento p que es el segundo hijo de su padre, a contar desde el último hijo
+                </p>
+                <p>
+                    <pre>#pseudo-nth-last-child>p:nth-last-child(2) {
+                            background: rgb(231, 17, 17);
+                        }</pre>
+                </p>
+                <div id="pseudo-nth-last-child">
+                    <p>Primer párrafo</p>
+                    <p>Segundo párrafo</p>
+                    <p>Tercer párrafo</p>
+                    <p>Cuarto párrafo</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:nth-last-of-type(2)</h3>
+                <p>Especificar un color de fondo para cada elemento p que es el segundo elemento p de su padre, a contar desde el último hijo
+                </p>
+                <p>
+                    <pre>#pseudo-nth-last-of-type>p:nth-last-of-type(2) {
+                            background: rgb(231, 17, 17);
+                        }</pre>
+                </p>
+                <div id="pseudo-nth-last-of-type">
+                    <p>Primer párrafo</p>
+                    <p>Segundo párrafo</p>
+                    <p>Tercer párrafo</p>
+                    <p>Cuarto párrafo</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:nth-of-type(2)</h3>
+                <p>Especificar un color de fondo para cada elemento p que es el segundo elemento p de su padre
+                </p>
+                <p>
+                    <pre>#pseudo-nth-of-type>:nth-of-type(2) {
+                            background: rgb(231, 17, 17);
+                        }</pre>
+                </p>
+                <div id="pseudo-nth-of-type">
+                    <p>Primer párrafo</p>
+                    <p>Segundo párrafo</p>
+                    <p>Tercer párrafo</p>
+                    <p>Cuarto párrafo</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:only-of-type</h3>
+                <p>Especificar un color de fondo para cada elemento p que es el hijo único de su tipo, de su padre
+                </p>
+                <p>
+                    <pre>#pseudo-only-of-type>div>p:only-of-type {
+                            background: rgb(231, 17, 17);
+                        }</pre>
+                </p>
+                <div id="pseudo-only-of-type">
+                    <div>
+                        <p>Párrafo</p>
+                    </div>
+                    <div>Párrafo</p>
+                        <p>Párrafo</p>
+                    </div>
+                    <p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:only-child</h3>
+                <p>Especificar un color de fondo para cada elemento p que es el único hijo de su padre:
+                </p>
+                <p>
+                    <pre>#pseudo-only-child>div>p:only-child {
+                            background: rgb(231, 17, 17);
+                        }</pre>
+                </p>
+                <div id="pseudo-only-child">
+                    <div>
+                        <p>Esto es un párrafo</p>
+                    </div>
+
+                    <div><span>Esto es un span</span>
+                        <p>Esto es un párrafo</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h3>:optional</h3>
+                <p>Seleccionar y único estilo si el elemento input no tiene un atributo "required"
+                </p>
+                <p>
+                    <pre>#pseudo-optional>div>p:optional {
+                            background-color: rgb(240, 240, 13);
+                        }</pre>
+                </p>
+                <div id="pseudo-optional">
+                    Un input opcional <input><br>Un input requerido <input required>
+                </div>
+            </article>
+
+            <article>
+                <h3>:out-of-range</h3>
+                <p>Seleccione el estilo y sólo si el valor del elemento input es "fuera de alcance"
+                </p>
+                <p>
+                    <pre>#pseudo-out-of-range>input:out-of-range {
+                            border: 2px solid rgb(231, 17, 17);
+                        }</pre>
+                </p>
+                <div id="pseudo-out-of-range">
+                    <input type="number" min="5" max="10" value="15">
+                    <p>Intenta poner un número entre el rango dado (5 y 10)</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:read-only</h3>
+                <p>Seleccione el estilo y sólo si el elemento de entrada no es "sólo lectura"
+                </p>
+                <p>
+                    <pre></pre>
+                </p>
+                <div id="pseudo-read-only">
+
+                    Un input normal <input value="Hola"><br> Un input de sólo lectura <input readonly value="Hola">
+
+                </div>
+            </article>
+
+            <article>
+                <h3>:read-write</h3>
+                <p>Seleccione el estilo y sólo si el elemento de entrada no es "sólo lectura"
+                </p>
+                <p>
+                    <pre></pre>
+                </p>
+                <div id="pseudo-read-write">
+                    <h3>A demonstration of the :read-write selector.</h3>
+
+                    <p>A normal input element:<br><input value="hello"></p>
+
+                    <p>A readonly input element:<br><input readonly value="hello"></p>
+
+                    <p>The :read-write selector selects form elements with no "readonly" attribute.</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:required</h3>
+                <p>Seleccionar y único estilo si el elemento input tiene un atributo "required"
+                </p>
+                <p>
+                    <pre></pre>
+                </p>
+                <div id="pseudo-required">
+                    <h3>A demonstration of the :required selector.</h3>
+
+                    <p>An optional input element:<br><input></p>
+
+                    <p>A required input element:<br><input required></p>
+
+                    <p>The :required selector selects form elements with a "required" attribute.</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:root</h3>
+                <p>Ajuste el color de fondo del documento HTML
+                </p>
+                <p>
+                    <pre></pre>
+                </p>
+                <div id="pseudo-root">
+                    <h1>Esto es la cabecera</h1>
+                </div>
+            </article>
+
+            <article>
+                <h3>:target</h3>
+                <p>Resaltar anclaje HTML activa:
+                </p>
+                <p>
+                    <pre></pre>
+                </p>
+                <div id="pseudo-target">
+                    <h1>This is a heading</h1>
+
+                    <p><a href="#news1">Jump to New content 1</a></p>
+                    <p><a href="#news2">Jump to New content 2</a></p>
+
+                    <p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+
+                    <p id="news1"><b>New content 1...</b></p>
+                    <p id="news2"><b>New content 2...</b></p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:valid</h3>
+                <p>Seleccione el estilo y sólo si el valor del elemento input es válido
+                </p>
+                <p>
+                    <pre>#pseudo-valid>input:valid {
+                            background-color: rgb(240, 240, 13);
+                        }</pre>
+                </p>
+                <div id="pseudo-valid"><input type="email" value="prueba@ejemplo.com">
+
+                    <p>Try typing an illegal e-mail address, to see the styling disappear.</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>:visited</h3>
+                <p>Seleccionar y enlaces visitados estilo
+                </p>
+                <p>
+                    <pre>#pseudo-visited>a:visited {
+                            color: rgb(255, 192, 203);
+                        }</pre>
+                </p>
+                <div id="pseudo-visited"><a href="#">W3Schools Home</a><br>
+                    <a href="#">W3Schools HTML Tutorial</a><br>
+                    <a href="#">W3Schools CSS Tutorial</a>
+
+                    <p><b>Note:</b> The :visited selector style links to pages you have already visited.</p>
+                </div>
+            </article>
+
         </section>
 
         <footer>
