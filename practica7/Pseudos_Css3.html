@@ -320,12 +320,12 @@
                 </p>
                 <p>
                     <pre>#pseudo-link>a:link {
-                            border: 2px solid rgb(240, 240, 13);
+                            border: 2px solid rgb(250, 250, 5);
                         }</pre>
                 </p>
                 <div id="pseudo-link">
-                    <a href="#">link1</a>
-                    <a href="#">link2</a></div>
+                    <a href="#">Enlace 1</a><br>
+                    <a href="#">Enlace 2</a></div>
             </article>
 
             <article>
@@ -483,7 +483,9 @@
                 <p>Seleccione el estilo y sólo si el elemento de entrada no es "sólo lectura"
                 </p>
                 <p>
-                    <pre></pre>
+                    <pre>#pseudo-read-only>input:read-only {
+                            background-color: rgb(240, 240, 13);
+                        }</pre>
                 </p>
                 <div id="pseudo-read-only">
 
@@ -497,16 +499,15 @@
                 <p>Seleccione el estilo y sólo si el elemento de entrada no es "sólo lectura"
                 </p>
                 <p>
-                    <pre></pre>
+                    <pre>#pseudo-read-write>input:read-write {
+                            background-color: rgb(240, 240, 13);
+                        }</pre>
                 </p>
                 <div id="pseudo-read-write">
-                    <h3>A demonstration of the :read-write selector.</h3>
 
-                    <p>A normal input element:<br><input value="hello"></p>
 
-                    <p>A readonly input element:<br><input readonly value="hello"></p>
+                    Un input normal <input value="Hola"><br> Un input read-only <input readonly value="Hola">
 
-                    <p>The :read-write selector selects form elements with no "readonly" attribute.</p>
                 </div>
             </article>
 
@@ -515,16 +516,14 @@
                 <p>Seleccionar y único estilo si el elemento input tiene un atributo "required"
                 </p>
                 <p>
-                    <pre></pre>
+                    <pre>#pseudo-required>input:required {
+                            background-color: rgb(240, 240, 13);
+                        }</pre>
                 </p>
                 <div id="pseudo-required">
-                    <h3>A demonstration of the :required selector.</h3>
 
-                    <p>An optional input element:<br><input></p>
+                    Un input opcional <input> <br> Un input required <input required>
 
-                    <p>A required input element:<br><input required></p>
-
-                    <p>The :required selector selects form elements with a "required" attribute.</p>
                 </div>
             </article>
 
@@ -533,7 +532,9 @@
                 <p>Ajuste el color de fondo del documento HTML
                 </p>
                 <p>
-                    <pre></pre>
+                    <pre>#pseudo-root>:root {
+                            background: #ff0000;
+                        }</pre>
                 </p>
                 <div id="pseudo-root">
                     <h1>Esto es la cabecera</h1>
@@ -542,21 +543,24 @@
 
             <article>
                 <h3>:target</h3>
-                <p>Resaltar anclaje HTML activa:
+                <p>Resaltar anclaje HTML activa
                 </p>
                 <p>
-                    <pre></pre>
+                    <pre>#pseudo-target>:target {
+                            border: 2px solid rgb(177, 170, 170);
+                            background-color: #d6eb9d;
+                        }
+                        </pre>
                 </p>
                 <div id="pseudo-target">
-                    <h1>This is a heading</h1>
 
-                    <p><a href="#news1">Jump to New content 1</a></p>
-                    <p><a href="#news2">Jump to New content 2</a></p>
+                    <p><a href="#news1">Al Nuevo contenido 1</a></p>
+                    <p><a href="#news2">Al Nuevo contenido 2</a></p>
 
-                    <p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+                    <p>Click en los enlaces de arriba y el selector :target resalta el ancla HTML activo actual</p>
 
-                    <p id="news1"><b>New content 1...</b></p>
-                    <p id="news2"><b>New content 2...</b></p>
+                    <p id="news1"><b>Nuevo contenido 1</b></p>
+                    <p id="news2"><b>Nuevo contenido 2</b></p>
                 </div>
             </article>
 
@@ -571,7 +575,7 @@
                 </p>
                 <div id="pseudo-valid"><input type="email" value="prueba@ejemplo.com">
 
-                    <p>Try typing an illegal e-mail address, to see the styling disappear.</p>
+                    <p>Intenta escribir un email incorrecto y se perderá el estilo</p>
                 </div>
             </article>
 
@@ -584,11 +588,12 @@
                             color: rgb(255, 192, 203);
                         }</pre>
                 </p>
-                <div id="pseudo-visited"><a href="#">W3Schools Home</a><br>
-                    <a href="#">W3Schools HTML Tutorial</a><br>
-                    <a href="#">W3Schools CSS Tutorial</a>
+                <div id="pseudo-visited">
+                    <a href="#" target="_blank">Enlace 1</a><br>
+                    <a href="#" target="_blank">Enlace 2</a><br>
+                    <a href="#" target="_blank">Enlace 3</a>
 
-                    <p><b>Note:</b> The :visited selector style links to pages you have already visited.</p>
+                    <p>Los enlaces visitados se mostrarán en otro color</p>
                 </div>
             </article>
 

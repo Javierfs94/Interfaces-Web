@@ -224,7 +224,7 @@ pre {
 }
 
 #pseudo-link>a:link {
-    border: 2px solid rgb(240, 240, 13);
+    border: 2px solid rgb(250, 250, 5);
 }
 
 #pseudo-not>:not(p) {
@@ -280,8 +280,8 @@ pre {
 }
 
 #pseudo-target>:target {
-    border: 2px solid #D4D4D4;
-    background-color: #e5eecc;
+    border: 2px solid rgb(177, 170, 170);
+    background-color: #d6eb9d;
 }
 
 #pseudo-valid>input:valid {
