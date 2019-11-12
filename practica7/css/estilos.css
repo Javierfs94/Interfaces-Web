@@ -134,10 +134,6 @@ pre {
 
 /* Inicio de mis Pseudo-elementos */
 
-.descripcion {
-    color: rgb(243, 241, 241);
-}
-
 #pseudo-firstline>p::first-line {
     color: #ff0000;
     font-variant: small-caps;
@@ -175,10 +171,6 @@ pre {
 #pseudo-checked>form>input:checked {
     height: 25px;
     width: 25px;
-}
-
-#pseudo-indeterminate>input:indeterminate {
-    box-shadow: 0 0 1px 1px rgb(241, 7, 7);
 }
 
 #pseudo-enabled-disabled>form>input[type=text]:disabled {
@@ -232,7 +224,7 @@ pre {
 }
 
 #pseudo-link>a:link {
-    border: 2px solid rgb(250, 250, 5);
+    border: 2px solid rgb(240, 240, 13);
 }
 
 #pseudo-not>:not(p) {
@@ -247,12 +239,8 @@ pre {
     background: rgb(231, 17, 17);
 }
 
-#pseudo-nth-last-of-type span {
-    color: rgb(2, 2, 2);
-}
-
-#pseudo-nth-last-of-type>span:nth-last-of-type(2) {
-    background-color: rgb(231, 17, 17);
+#pseudo-nth-last-of-type>p:nth-last-of-type(2) {
+    background: rgb(231, 17, 17);
 }
 
 #pseudo-nth-of-type>:nth-of-type(2) {
@@ -292,8 +280,8 @@ pre {
 }
 
 #pseudo-target>:target {
-    border: 2px solid rgb(177, 170, 170);
-    background-color: #d6eb9d;
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
 }
 
 #pseudo-valid>input:valid {

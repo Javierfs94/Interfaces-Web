@@ -31,10 +31,7 @@
         </ul>
     </nav>
     <main>
-        <div class="descripcion">
-            <h2>PSEUDO-ELEMENTOS</h2>
-            <p>Es una palabra clave que se añade a los selectores y que permite añadir estilos a una parte concreta de un elemento seleccionado</p>
-        </div>
+        <h2>PSEUDO-ELEMENTOS</h2>
 
         <section>
             <article>
@@ -108,10 +105,7 @@
 
         </section>
 
-        <div class="descripcion">
-            <h2>PSEUDO-CLASES</h2>
-            <p>Es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. </p>
-        </div>
+        <h2>PSEUDO-CLASES</h2>
 
         <section>
             <article>
@@ -146,29 +140,6 @@
                     </form>
                 </div>
             </article>
-
-            <article>
-                <h3>:indeterminate</h3>
-                <p>selecciona los elementos de formulario que se encuentran en un estado indeterminado.
-                </p>
-                <p>
-                    <pre>#pseudo-indeterminate>input:indeterminate {
-                            box-shadow: 0 0 1px 1px rgb(241, 7, 7);
-                        }</pre>
-                </p>
-                <div id="pseudo-indeterminate">
-
-                    <p> El checkbox esta en un estado indeterminado, un vez hecho click entra en estado determinado y no volverá a tener el sombreado</p>
-                    <input type="checkbox" id="myCheckbox"> Checkbox
-
-                    <script>
-                        // Hace el checkbox en estado indeterminado a través JavaScript
-                        let checkbox = document.getElementById("myCheckbox");
-                        checkbox.indeterminate = true;
-                    </script>
-                </div>
-            </article>
-
 
             <article>
                 <h3>:enabled y :disabled</h3>
@@ -299,7 +270,7 @@
             </article>
 
             <article>
-                <h3>:lang()</h3>
+                <h3>:lang(ho)</h3>
                 <p>Selecciona cada elemento con un atributo lang cuyo valor empiece con "ho"
                     <p>
                         <pre>#pseudo-lang>p:lang(ho) {
@@ -349,16 +320,16 @@
                 </p>
                 <p>
                     <pre>#pseudo-link>a:link {
-                            border: 2px solid rgb(250, 250, 5);
+                            border: 2px solid rgb(240, 240, 13);
                         }</pre>
                 </p>
                 <div id="pseudo-link">
-                    <a href="#">Enlace 1</a><br>
-                    <a href="#">Enlace 2</a></div>
+                    <a href="#">link1</a>
+                    <a href="#">link2</a></div>
             </article>
 
             <article>
-                <h3>:not()</h3>
+                <h3>:not(p)</h3>
                 <p>Establecer un color de fondo para todos los elementos que no son un elemento p </p>
                 <p>
                     <pre>#pseudo-not>:not(p) {
@@ -371,16 +342,14 @@
             </article>
 
             <article>
-                <h3>:nth-child()</h3>
+                <h3>:nth-child(2)</h3>
                 <p>Especificar un color de fondo para cada elemento p que es el segundo hijo de su padre
                 </p>
                 <p>
                     <pre>#pseudo-nth-child>p:nth-child(2) {
                             background: rgb(231, 17, 17);
-                        }
-                    </pre>
+                        }</pre>
                 </p>
-
                 <div id="pseudo-nth-child">
                     <p>Primer párrafo</p>
                     <p>Segundo párrafo</p>
@@ -390,7 +359,7 @@
             </article>
 
             <article>
-                <h3>:nth-last-child()</h3>
+                <h3>:nth-last-child(2)</h3>
                 <p>Especificar un color de fondo para cada elemento p que es el segundo hijo de su padre, a contar desde el último hijo
                 </p>
                 <p>
@@ -407,25 +376,24 @@
             </article>
 
             <article>
-                <h3>:nth-last-of-type()</h3>
+                <h3>:nth-last-of-type(2)</h3>
                 <p>Especificar un color de fondo para cada elemento p que es el segundo elemento p de su padre, a contar desde el último hijo
                 </p>
                 <p>
-                    <pre>#pseudo-nth-last-of-type>span:nth-last-of-type(2) {
-                            background-color: rgb(231, 17, 17);
+                    <pre>#pseudo-nth-last-of-type>p:nth-last-of-type(2) {
+                            background: rgb(231, 17, 17);
                         }</pre>
                 </p>
                 <div id="pseudo-nth-last-of-type">
-                    <span>Este es un span.</span><br>
-                    <span>Este es otro span.</span><br>
-                    <em>Esto esta enfatizado.</em><br>
-                    <span>Este span se pone color rojo</span><br>
-                    <span>Aquí hay un último span.</span>
+                    <p>Primer párrafo</p>
+                    <p>Segundo párrafo</p>
+                    <p>Tercer párrafo</p>
+                    <p>Cuarto párrafo</p>
                 </div>
             </article>
 
             <article>
-                <h3>:nth-of-type()</h3>
+                <h3>:nth-of-type(2)</h3>
                 <p>Especificar un color de fondo para cada elemento p que es el segundo elemento p de su padre
                 </p>
                 <p>
@@ -454,8 +422,7 @@
                     <div>
                         <p>Párrafo</p>
                     </div>
-                    <div>
-                        <p>Párrafo</p>
+                    <div>Párrafo</p>
                         <p>Párrafo</p>
                     </div>
                     <p>
@@ -516,9 +483,7 @@
                 <p>Seleccione el estilo y sólo si el elemento de entrada no es "sólo lectura"
                 </p>
                 <p>
-                    <pre>#pseudo-read-only>input:read-only {
-                            background-color: rgb(240, 240, 13);
-                        }</pre>
+                    <pre></pre>
                 </p>
                 <div id="pseudo-read-only">
 
@@ -532,15 +497,16 @@
                 <p>Seleccione el estilo y sólo si el elemento de entrada no es "sólo lectura"
                 </p>
                 <p>
-                    <pre>#pseudo-read-write>input:read-write {
-                            background-color: rgb(240, 240, 13);
-                        }</pre>
+                    <pre></pre>
                 </p>
                 <div id="pseudo-read-write">
+                    <h3>A demonstration of the :read-write selector.</h3>
 
+                    <p>A normal input element:<br><input value="hello"></p>
 
-                    Un input normal <input value="Hola"><br> Un input read-only <input readonly value="Hola">
+                    <p>A readonly input element:<br><input readonly value="hello"></p>
 
+                    <p>The :read-write selector selects form elements with no "readonly" attribute.</p>
                 </div>
             </article>
 
@@ -549,14 +515,16 @@
                 <p>Seleccionar y único estilo si el elemento input tiene un atributo "required"
                 </p>
                 <p>
-                    <pre>#pseudo-required>input:required {
-                            background-color: rgb(240, 240, 13);
-                        }</pre>
+                    <pre></pre>
                 </p>
                 <div id="pseudo-required">
+                    <h3>A demonstration of the :required selector.</h3>
 
-                    Un input opcional <input> <br> Un input required <input required>
+                    <p>An optional input element:<br><input></p>
 
+                    <p>A required input element:<br><input required></p>
+
+                    <p>The :required selector selects form elements with a "required" attribute.</p>
                 </div>
             </article>
 
@@ -565,9 +533,7 @@
                 <p>Ajuste el color de fondo del documento HTML
                 </p>
                 <p>
-                    <pre>#pseudo-root>:root {
-                            background: #ff0000;
-                        }</pre>
+                    <pre></pre>
                 </p>
                 <div id="pseudo-root">
                     <h1>Esto es la cabecera</h1>
@@ -576,24 +542,21 @@
 
             <article>
                 <h3>:target</h3>
-                <p>Resaltar anclaje HTML activa
+                <p>Resaltar anclaje HTML activa:
                 </p>
                 <p>
-                    <pre>#pseudo-target>:target {
-                            border: 2px solid rgb(177, 170, 170);
-                            background-color: #d6eb9d;
-                        }
-                        </pre>
+                    <pre></pre>
                 </p>
                 <div id="pseudo-target">
+                    <h1>This is a heading</h1>
 
-                    <p><a href="#news1">Al Nuevo contenido 1</a></p>
-                    <p><a href="#news2">Al Nuevo contenido 2</a></p>
+                    <p><a href="#news1">Jump to New content 1</a></p>
+                    <p><a href="#news2">Jump to New content 2</a></p>
 
-                    <p>Click en los enlaces de arriba y el selector :target resalta el ancla HTML activo actual</p>
+                    <p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
 
-                    <p id="news1"><b>Nuevo contenido 1</b></p>
-                    <p id="news2"><b>Nuevo contenido 2</b></p>
+                    <p id="news1"><b>New content 1...</b></p>
+                    <p id="news2"><b>New content 2...</b></p>
                 </div>
             </article>
 
@@ -608,7 +571,7 @@
                 </p>
                 <div id="pseudo-valid"><input type="email" value="prueba@ejemplo.com">
 
-                    <p>Intenta escribir un email incorrecto y se perderá el estilo</p>
+                    <p>Try typing an illegal e-mail address, to see the styling disappear.</p>
                 </div>
             </article>
 
@@ -621,21 +584,17 @@
                             color: rgb(255, 192, 203);
                         }</pre>
                 </p>
-                <div id="pseudo-visited">
-                    <a href="#" target="_blank">Enlace 1</a><br>
-                    <a href="#" target="_blank">Enlace 2</a><br>
-                    <a href="#" target="_blank">Enlace 3</a>
+                <div id="pseudo-visited"><a href="#">W3Schools Home</a><br>
+                    <a href="#">W3Schools HTML Tutorial</a><br>
+                    <a href="#">W3Schools CSS Tutorial</a>
 
-                    <p>Los enlaces visitados se mostrarán en otro color</p>
+                    <p><b>Note:</b> The :visited selector style links to pages you have already visited.</p>
                 </div>
             </article>
 
         </section>
 
         <footer>
-            <div>Jaime Rabasco Ronda</div>
-            <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
-            <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
             <div>Francisco Javier Frías Serrano</div>
             <a href="https://twitter.com/javifs94" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
             <a href="https://github.com/Javierfs94" class="social"><img src="icon/github.svg" alt="GitHub"></a>
