@@ -1,0 +1,6 @@
+Maqueta el mockup del enlace en HTML5 y CSS3 usando los siguientes displays:
+
+- inline-block,inline
+- flex
+- grid
+- table  (opcional)
