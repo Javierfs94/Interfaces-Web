@@ -93,10 +93,6 @@ aside {
     padding: 0.5%;
 }
 
-#archivo {
-    border: solid 1px black;
-}
-
 aside>div>div {
     padding: 5px;
     display: inline-block;
@@ -104,11 +100,18 @@ aside>div>div {
     text-align: justify;
 }
 
+#archivo {
+    border: solid 1px black;
+    padding: 30px;
+    text-align: center;
+}
+
 #archivo>h2 {
     text-align: center;
 }
 
 #publicidad {
+    padding: 20px;
     border: solid 1px black;
     text-align: center;
     margin-top: 3px;

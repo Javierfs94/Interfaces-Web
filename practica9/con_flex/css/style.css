@@ -1,20 +1,40 @@
-* {
-    margin: 0px;
+body {
+    margin: 5px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    margin: auto;
-    width: 500px;
+    background-color: black;
+    color: white;
+}
+
+header h1 {
+    margin: 5px;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
 }
 
 nav {
     list-style: none;
+    text-align: center;
+    border: solid 1px black;
 }
 
-nav>ul>li {
-    display: inline-block;
+nav>ul {
+    text-align: center;
+    margin: 0;
+    padding: 0.5%;
+    list-style: none;
+    justify-content: center;
+    display: flex;
 }
 
 nav li a {
@@ -22,7 +42,7 @@ nav li a {
     color: rgb(250, 243, 243);
     text-decoration: none;
     padding: 10px 10px;
-    margin: 3px;
+    margin: 5px;
     display: block;
 }
 
@@ -45,7 +65,107 @@ nav ul li {
 }
 
 nav ul li ul li ul {
-    /* right: -140px; */
     left: 150px;
     top: 0px;
+}
+
+#principal {
+    display: flex;
+}
+
+main {
+    border: 1px solid black;
+    margin-top: 2px;
+    width: 70%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article>h2,
+p {
+    text-align: center;
+}
+
+article {
+    border: 1px solid black;
+    width: 25%;
+    margin: 1%;
+    text-align: justify;
+    padding: 10px;
+}
+
+aside {
+    width: 25%;
+    margin-top: 2px;
+    margin-left: 2px;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#archivo {
+    border: solid 1px black;
+    padding: 1%;
+    margin: 1%;
+    text-align: justify;
+}
+
+#archivo>h2 {
+    text-align: center;
+}
+
+#archivo>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#archivo>div>div {
+    flex: 49%;
+}
+
+#publicidad {
+    padding: 20px;
+    border: solid 1px black;
+    text-align: center;
+    margin-top: 3px;
+}
+
+#publicidad>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#publicidad>div>div {
+    flex: 30%;
+}
+
+#publicidad>h2 {
+    text-align: center;
+}
+
+#publicidad>div>img {
+    width: 40%;
+    height: 40%;
+}
+
+footer {
+    border: solid 1px black;
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer>h2 {
+    text-align: center;
+}
+
+footer>p {
+    text-align: left;
+}
+
+#imagenes-redes-sociales {
+    text-align: right;
 }

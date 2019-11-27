@@ -1,0 +1,26 @@
+body {
+    margin: 5px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    border: solid 1px black;
+}
+
+nav {
+    border: solid 1px black;
+}
+
+main {
+    border: solid 1px black;
+}
+
+aside {
+    border: solid 1px black;
+}
+
+footer {
+    border: solid 1px black;
+}
