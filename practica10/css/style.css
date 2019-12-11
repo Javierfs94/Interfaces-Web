@@ -1,26 +1,248 @@
 body {
-    margin: 5px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
-    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-image: linear-gradient(rgb(230, 255, 1), rgb(230, 191, 20));
+}
+
+#logo {
+    text-align: left;
+    padding: 10px;
+}
+
+#logo h1 {
+    font: bold 3em Arial;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c5c5c5, 0 3px 0 #bbb, 0 4px 0 #b5b5b5, 0 5px 0 #aaa, 0 6px 0 #a5a5a5, 0 7px 3px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.15), 0 20px 20px rgba(0, 0, 0, 0.1);
+    color: rgba(236, 12, 12, 0.8);
+}
+
+#logo h2 {
+    font: bold 1em Arial;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c5c5c5, 0 3px 0 #bbb, 0 4px 0 #b5b5b5, 0 5px 0 #aaa, 0 6px 0 #a5a5a5, 0 7px 3px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.15), 0 20px 20px rgba(0, 0, 0, 0.1);
+    color: rgba(236, 12, 12, 0.8);
+}
+
+#login {
+    text-align: center;
+}
+
+#login input:focus {
+    transform: scale(1.25);
+    background-color: rgb(76, 230, 76);
 }
 
 nav {
-    border: solid 1px black;
+    list-style: none;
+    text-align: center;
+    background-image: linear-gradient(rgb(230, 255, 1), rgb(230, 191, 20));
 }
 
-main {
-    border: solid 1px black;
+nav ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-aside {
+nav>ul>li {
+    display: inline-block;
+}
+
+nav li a {
+    background-color: rgb(247, 9, 49);
+    color: rgb(250, 243, 243);
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 5px;
+    display: block;
+    border-radius: 20px;
+}
+
+nav li a:hover {
+    background-color: #bb2f2f;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+nav li:hover>ul {
+    display: block;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul li ul {
+    left: 150px;
+    top: 0px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section article {
+    border: 1px solid black;
+    margin: 30px;
+    padding: 20px;
+}
+
+article:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+article a {
+    text-decoration: none;
+    color: black;
+}
+
+article img {
+    display: block;
+    margin: auto;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article p {
+    text-align: justify;
+}
+
+.fecha {
+    text-align: right;
+}
+
+#paginas {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+}
+
+#botones {
     border: solid 1px black;
+    margin: 0px 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#buscador {
+    padding: 5px;
+    text-align: justify;
+}
+
+#enlaces-interes {
+    padding: 5px;
+    text-align: justify;
+}
+
+#enlaces-interes a {
+    text-decoration: none;
+    color: rgb(226, 21, 21);
+}
+
+#enlaces-interes a:hover {
+    font-size: 20px;
+}
+
+#reloj {
+    text-align: center;
+}
+
+#patrocinadores {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+#patrocinadores p {
+    text-align: center;
+}
+
+#patrocinadores img {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: movimiento;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimiento {
+    from {
+        top: 150px;
+    }
+    to {
+        bottom: 10px;
+    }
+}
+
+#patrocinadores>div>a>img:hover {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
 }
 
 footer {
     border: solid 1px black;
+    background-image: linear-gradient( rgb(230, 191, 20), rgb(230, 255, 1));
+}
+
+#contacto a {
+    background-color: rgb(247, 9, 49);
+    color: rgb(250, 243, 243);
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 5px;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#autor-redes {
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+}
+
+#contacto {
+    padding: 20px;
+    margin-left: 10px;
+}
+
+#redes-sociales {
+    padding: 20px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+#redes-sociales>a>img:hover {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+#marca {
+    text-align: center;
 }

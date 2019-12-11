@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-contacto.css">
+    <link rel="stylesheet" href="css/style-autor.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.png" type="png" sizes="16x16">
     <title>Food Blog</title>
@@ -28,7 +28,8 @@
                     </label><input type="text" name="usuario" placeholder="Usuario" required>
                 </p>
                 <p>
-                    </label><input type="pass" name="pass" placeholder="Contraseña" required></p>
+                    </label><input type="pass" name="pass" placeholder="Contraseña" required>
+                </p>
                 <p><button type="submit">Enviar</button></p>
             </form>
         </div>
@@ -42,39 +43,29 @@
         </ul>
     </nav>
 
-    <main id="main-contacto">
+    <main id="main-autor">
         <div></div>
 
-        <div id="formulario-contacto">
-            <h2>Contáctanos</h2>
-            <form name="contacto" action="" method="post">
-
-                <label class="field" for="nombre"> 
-                        <span class="span-text">Nombre:</span>
-                        <input type="text" name="nombre" id="nombre" value="" required>
-                    </label>
-
-                <label class="field" for="pregunta">
-                            <span class="span-text">Pregunta:</span>
-                            <input type="text" name="pregunta" id="pregunta" value="" required>
-                    </label>
-
-                <label class="field" for="email">
-                        <span class="span-text">Email:</span>
-                        <input type="email" name="email" id="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
-                    </label>
-
-                <label class="field" for="descripcion">
-                            <span class="span-text">Descripción:</span>
-                            <textarea name="descripcion" id="descripcion" value="" cols="30" rows="10" required></textarea>
-                    </label>
-
-                <button type="submit">Enviar</button>
-            </form>
+        <div id="autor">
+            <h2>Sobre el autor</h2>
+            <img src="img/autor.jpg" alt="Imagen del autor del blog">
+            <p>Estudiante del Grado Superior de Desarrollo de Aplicaciones Web (DAW)</p>
+            <p>Desarrollador Web y Sysadmin</p>
+            <p>Esta práctica fue realizada en una resolución de <b>1920 x 1080</b></p>
+            <p>Mis Redes Sociales</p>
+            <div id="redes-sociales-autor">
+                <a href="https://github.com/Javierfs94"><img src="img/github.png" alt="Red social de GitHub con los repositorios del autor"></a>
+                <a href="https://www.linkedin.com/in/javifs94/"><img src="img/linkedin.png" alt="Red social profesional de LinkedIn del autor"></a>
+                <a href="https://twitter.com/javifs94"><img src="img/twitter.png" alt="Red social de Twitter con los tuits del autor"></a>
+            </div>
         </div>
         <div></div>
+
     </main>
 
+    <div id="iron-man">
+        <img src="img/iron-man-flying.jpeg" alt="Iron man volando">
+    </div>
 
     <footer>
         <div id="autor-redes">
@@ -84,9 +75,9 @@
             <div></div>
             <div id="redes-sociales">
                 <p>Síguenos en nuestras Redes Sociales</p>
-                <a href="#"><img src="img/facebook.png " alt="Red social de Facebook "></a>
-                <a href="#"><img src="img/twitter.png " alt="Red social de Twitter "></a>
-                <a href="#"><img src="img/instagram.png " alt="Red social de Instagram "></a>
+                <a href="#"><img src="img/facebook.png" alt="Red social de Facebook"></a>
+                <a href="#"><img src="img/twitter.png" alt="Red social de Twitter"></a>
+                <a href="#"><img src="img/instagram.png" alt="Red social de Instagram"></a>
             </div>
         </div>
 

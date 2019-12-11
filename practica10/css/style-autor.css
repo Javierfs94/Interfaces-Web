@@ -1,0 +1,33 @@
+#main-autor {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#redes-sociales-autor a {
+    margin: 0px 5px;
+}
+
+#autor {
+    text-align: center;
+}
+
+#autor>img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+#iron-man {
+    margin-top: 20px;
+}
+
+#iron-man img {
+    width: 250px;
+    height: 200px;
+}
+
+#iron-man:hover {
+    margin-left: 100%;
+    transition-duration: 10s;
+}

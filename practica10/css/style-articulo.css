@@ -1,0 +1,22 @@
+#main-articulo {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#main-articulo h2 {
+    text-align: center;
+}
+
+#main-articulo p {
+    text-align: justify;
+}
+
+#autor-categorias p {
+    text-align: left;
+}
+
+#fecha-articulo {
+    text-align: right;
+}

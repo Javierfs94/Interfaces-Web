@@ -9,79 +9,211 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Práctica 10 - Creación de un blog - Francisco Javier Frías Serrano</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="js/reloj.js"></script>
+    <link rel="icon" href="img/favicon.png" type="png" sizes="16x16">
+    <title>Food Blog</title>
 </head>
 
-<body>
+<body onload="reloj()">
     <header>
-        <h1>Food Blog</h1>
-        <h2>El mejor blog de cocina</h2>
+        <div id="logo">
+            <h1>Food Blog</h1>
+            <h2>El mejor blog de cocina</h2>
+        </div>
+        <div id="login">
+            <form action="" method="post">
+                <h3>Inicio sesión</h3>
+                <p>
+                    </label><input type="text" name="usuario" placeholder="Usuario" required>
+                </p>
+                <p>
+                    </label><input type="pass" name="pass" placeholder="Contraseña" required></p>
+                <p><button type="submit">Enviar</button></p>
+            </form>
+        </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="#">Quiénes somos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 
-    <main>
-        <section>
-            <article>
-                <h3>Título</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
-                <time datetime="2019-11-26">8/11/2019</time>
-            </article>
-            <article>
-                <h3>Título</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
-                <time datetime="2019-11-26">8/11/2019</time>
-            </article>
-            <article>
-                <h3>Título</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
-                <time datetime="2019-11-26">8/11/2019</time>
-            </article>
-            <article>
-                <h3>Título</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
-                <time datetime="2019-11-26">8/11/2019</time>
-            </article>
-            <article>
-                <h3>Título</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
-                <time datetime="2019-11-26">8/11/2019</time>
-            </article>
-            <article>
-                <h3>Título</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
-                <time datetime="2019-11-26">8/11/2019</time>
-            </article>
-        </section>
+    <div id="container">
+        <main>
+            <section>
+                <article>
+                    <div>
+                        <a href="articulo.html">
+                            <img src="img/tiramisu.png" alt="Noticia 1">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="articulo.html">
+                            <h3>Título</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
+                            <p class="fecha">
+                                <time datetime="2019-11-26">8/11/2019</time>
+                            </p>
+                        </a>
+                    </div>
+
+                </article>
+                <article>
+                    <div>
+                        <a href="articulo.html">
+                            <img src="img/tiramisu.png" alt="Noticia 1">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="articulo.html">
+                            <h3>Título</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
+                            <p class="fecha">
+                                <time datetime="2019-11-26">8/11/2019</time>
+                            </p>
+                        </a>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <a href="articulo.html">
+                            <img src="img/tiramisu.png" alt="Noticia 1">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="articulo.html">
+                            <h3>Título</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
+                            <p class="fecha">
+                                <time datetime="2019-11-26">8/11/2019</time>
+                            </p>
+                        </a>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <a href="articulo.html">
+                            <img src="img/tiramisu.png" alt="Noticia 1">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="articulo.html">
+                            <h3>Título</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
+                            <p class="fecha">
+                                <time datetime="2019-11-26">8/11/2019</time>
+                            </p>
+                        </a>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <a href="articulo.html">
+                            <img src="img/tiramisu.png" alt="Noticia 1">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="articulo.html">
+                            <h3>Título</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
+                            <p class="fecha">
+                                <time datetime="2019-11-26">8/11/2019</time>
+                            </p>
+                        </a>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <a href="articulo.html">
+                            <img src="img/tiramisu.png" alt="Noticia 1">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="articulo.html">
+                            <h3>Título</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure labore impedit tempore sint aperiam praesentium dolor ullam eaque facilis non suscipit repudiandae, expedita voluptates nisi maxime sequi? Aperiam, illo ex?</p>
+                            <p class="fecha">
+                                <time datetime="2019-11-26">8/11/2019</time>
+                            </p>
+                        </a>
+                    </div>
+                </article>
+            </section>
+
+            <div id="paginas">
+                <div></div>
+                <div id="botones">
+                    <button type="button"><</button>
+                    <button type="button">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                    <button type="button">></button>
+                </div>
+                <div></div>
+            </div>
+
+        </main>
+
         <aside>
+
+            <div id="buscador">
+                <p>Busque un artículo</p>
+                <input type="text" name="" placeholder="Buscador">
+            </div>
+
             <div id="enlaces-interes">
                 <p>Páginas relacionadas</p>
                 <p><a href="https://www.monstruorecetas.es/">Monstruo recetas</a>
                 </p>
                 <p><a href="https://disfrutandodelacocina.com/">Disfrutando de la cocina</a>
                 </p>
-                <p><a href="https://yhoyquecomemos.com/">Y hoy que comemos</a>
+                <p><a href="https://comerconarte.com/">Comer con arte</a>
                 </p>
             </div>
-            <div id="publicidad">
-                <img src="" alt="">
-                <img src="" alt="">
+
+            <div id="reloj">
+                <h2>Reloj</h2>
+                <form name="form_reloj">
+                    <input type="text" name="reloj" size="10">
+                </form>
+            </div>
+
+            <div id="patrocinadores">
+                <p>Nuestros patrocinadores</p>
+                <div>
+                    <a href="https://www.burgerking.es/" target="__blank"> <img src="img/logo-burger-king.png" alt="Logo de publicidad del restaurante Burger King">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://kfc.es/" target="__blank"><img src="img/logo-kfc.png" alt="Logo de publicidad del restaurante KFC">
+                    </a>
+                </div>
             </div>
         </aside>
-    </main>
+    </div>
+
+    </aside>
+    </div>
     <footer>
-        <div id="marca">@2019 Food Blog - Diseñada por Francisco Javier Frías Serrano</div>
-        <div id="redes-sociales">
-            <p>Síguenos en nuestras Redes Sociales</p>
-            <img src="img/facebook.png" alt="Red social de Facebook">
-            <img src="img/twitter.png" alt="Red social de Twitter">
-            <img src="img/instagram.png" alt="Red social de Instagram">
+        <div id="autor-redes">
+            <div id="contacto">
+                <p><a href="autor.html">Sobre el autor</a></p>
+            </div>
+            <div></div>
+            <div id="redes-sociales">
+                <p>Síguenos en nuestras Redes Sociales</p>
+                <a href="#"><img src="img/facebook.png" alt="Red social de Facebook"></a>
+                <a href="#"><img src="img/twitter.png" alt="Red social de Twitter"></a>
+                <a href="#"><img src="img/instagram.png" alt="Red social de Instagram"></a>
+            </div>
+        </div>
+
+        <div id="marca">
+            <p>@2019 Food Blog - Diseñada por Francisco Javier Frías Serrano</p>
         </div>
     </footer>
 </body>

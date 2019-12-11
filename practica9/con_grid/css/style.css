@@ -3,12 +3,10 @@ body {
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    display: grid;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 15vh 6vh auto 25vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 'header header header header' 'nav nav nav nav' 'main main main aside' 'footer footer footer footer';
 }
@@ -58,8 +56,9 @@ body {
 
 #main>section {
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 10px 10px;
 }
 
 #main>section>article {

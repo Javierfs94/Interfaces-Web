@@ -1,0 +1,45 @@
+#main-contacto {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#formulario-contacto h2 {
+    text-align: center;
+}
+
+#formulario-contacto>form>label>input {
+    margin: 10px;
+}
+
+#formulario-contacto>form>label>input:focus {
+    transform: scale(1.05);
+    background-color: rgb(9, 248, 236);
+}
+
+#formulario-contacto>form>label>input:valid {
+    background-color: rgb(24, 233, 24);
+    color: black;
+}
+
+#formulario-contacto>form>label>input:invalid {
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
+
+#formulario-contacto>form>label>input:required {
+    background-color: rgb(248, 232, 1);
+    color: black;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 5px;
+    margin-bottom: 5px;
+}
+
+.span-text {
+    width: 100px;
+}
