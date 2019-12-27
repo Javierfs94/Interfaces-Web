@@ -74,6 +74,8 @@ header {
     background: url(../imagenes/logo_dakar_Grises_alpha.png) no-repeat 97%, url(../imagenes/logo_toyota_nuevo_sinnombre.svg)no-repeat 94%, url(../imagenes/Logo_wec_400x400_alpha.png) no-repeat 78%, url(../imagenes/mclaren-1.svg) no-repeat 25%, url(../imagenes/logo-renault.svg) no-repeat 15%, url(../imagenes/logo_Formula1.svg) no-repeat 5%, var(--degradado-dakar-mc-f1) no-repeat;
     background-size: 40px, 270px, 140px, 200px, 110px, 110px, 100%;
     text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 header h1 {
@@ -98,6 +100,8 @@ header h2 {
 
 main h2 {
     text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #palmares {
@@ -105,6 +109,13 @@ main h2 {
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
     padding: 1em;
+}
+
+#palmares h3 {
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #palmares:hover {
@@ -118,12 +129,14 @@ main h2 {
     height: 250px;
 }
 
-#formula1 h2 {
-    background-color: #FF1E00;
+#formula1 {
+    padding: 1rem;
 }
 
-#formula1 h2 {
-    background-color: #FF1E00;
+#formula1 h3 {
+    background-color: var(--color-formula1);
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #formula1:hover {
@@ -131,13 +144,19 @@ main h2 {
     transition-duration: 2s
 }
 
-#formula1 span:hover {
-    color: #FF1E00;
-    /* transition-duration: 2s */
+#formula1:hover span {
+    color: var(--color-formula1);
+    transition-duration: 2s
 }
 
-#wec h2 {
+#wec {
+    padding: 1rem;
+}
+
+#wec h3 {
     background-image: linear-gradient(to left, var(--secondary-color-wec), var(--primary-color-wec));
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #wec:hover {
@@ -145,13 +164,19 @@ main h2 {
     transition-duration: 2s
 }
 
-#wec span:hover {
+#wec:hover span {
     color: var(--primary-color-wec);
-    /* transition-duration: 2s */
+    transition-duration: 2s
 }
 
-#dakar h2 {
+#dakar {
+    padding: 1rem;
+}
+
+#dakar h3 {
     background-image: linear-gradient(to left, var(--primary-color-dakar), var(--secondary-color-dakar));
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #dakar:hover {
@@ -159,9 +184,9 @@ main h2 {
     transition-duration: 2s
 }
 
-#dakar span:hover {
+#dakar:hover span {
     color: var(--primary-color-dakar);
-    /* transition-duration: 2s */
+    transition-duration: 2s
 }
 
 #modalidades {
@@ -171,9 +196,15 @@ main h2 {
     padding: 1em;
 }
 
+#modalidades h3 {
+    color: var(--secondary-text-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 #modalidades img {
     align-content: center;
-    width: 500px;
+    width: 100%;
     height: 250px;
 }
 
@@ -182,12 +213,14 @@ main h2 {
     text-align: center;
 }
 
-#bicampeon1 p {
-    text-align: justify;
+#bicampeon1 h3 {
+    background-color: var(--color-formula1);
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-#bicampeon1 h3 {
-    background-color: #FF1E00;
+#bicampeon1 p {
+    text-align: justify;
 }
 
 #bicampeon1:hover {
@@ -199,12 +232,14 @@ main h2 {
     padding: 1em;
 }
 
-#bicampeon2 p {
-    text-align: justify;
-}
-
 #bicampeon2 h3 {
     text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#bicampeon2 p {
+    text-align: justify;
 }
 
 #bicampeon2:hover {
@@ -214,21 +249,25 @@ main h2 {
 
 #bicampeon2 h3 {
     background-image: linear-gradient(to left, var(--secondary-color-wec), var(--primary-color-wec));
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #nuevos-retos {
-    background-image: url(../imagenes/dakar_alonso_4.jpg);
-    color: var(--secondary-text-color);
+    background: url(../imagenes/dakar_alonso_4.jpg) no-repeat;
     padding: 1em;
 }
 
 #nuevos-retos p {
     text-align: justify;
+    color: var(--secondary-text-color);
 }
 
 #nuevos-retos h3 {
     background-image: linear-gradient(to left, var(--primary-color-dakar), var(--secondary-color-dakar));
     text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #nuevos-retos:hover {
