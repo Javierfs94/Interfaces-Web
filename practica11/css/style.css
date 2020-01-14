@@ -1,10 +1,10 @@
 :root {
-    --primario-color: #64dd17;
-    --secundario-color: #76ff03;
+    --primario-color: #005A8A;
+    --secundario-color: #Dfcb91;
     --bordes-color: rgb(0, 0, 0);
-    --texto-primario-color: rgb(0, 0, 0);
+    --texto-primario-color: rgb(255, 255, 255);
     --iconos-articulos-color: #000000;
-    --articulos-color: rgb(233, 233, 14);
+    --articulos-color: #F5e249;
 }
 
 body {
@@ -30,7 +30,6 @@ header h1 {
 nav {
     list-style: none;
     text-align: center;
-    background-color: var(--secundario-color);
 }
 
 nav ul {
@@ -43,7 +42,7 @@ nav>ul>li {
 }
 
 nav li a {
-    background-color: rgb(247, 9, 49);
+    background-color: var(--primario-color);
     color: rgb(250, 243, 243);
     text-decoration: none;
     padding: 10px 10px;
@@ -59,7 +58,7 @@ nav li a p {
 }
 
 nav li a:hover {
-    background-color: #c72323;
+    background-color: #FFB000;
 }
 
 nav li ul {
@@ -82,7 +81,6 @@ nav ul li ul li ul {
 }
 
 section article {
-    border: 1px solid black;
     background-color: var(--articulos-color);
     margin: 1em;
     padding: 1em;
@@ -140,4 +138,8 @@ footer {
     background-color: var(--primario-color);
     text-align: center;
     padding: 0.25em 0 0.25em 0;
+}
+
+footer p {
+    color: var(--texto-primario-color);
 }
