@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Práctica 11 de la asignatura de Diseño de Interfaces Web, con un primer acercamiento a diseño Responsive">
+    <meta name="keywords" content="responsive,grancapitan,diseño,desarrollo,daw">
+    <meta name="author" content="Francisco Javier Frías Serrano">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-formulario.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Práctica 11 - Francisco Javier Frías Serrano</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestor de tareas</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <div>
+                    <a href="index.html">
+                        <i class="material-icons">home</i>
+                        <p>Inicio</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="formulario.html">
+                        <i class="material-icons">menu</i>
+                        <p>Nueva tarea</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-contacto">
+        <div></div>
+
+        <div id="formulario">
+            <h2>Contáctanos</h2>
+            <form name="contacto" action="" method="post">
+
+                <label>
+                    <p>Módulo:</p>
+                    <select name="modulo" id="modulo">
+                        <option value="" disabled selected>Seleccione un Módulo</option>
+                        <option value="DIW">DIW</option>
+                        <option value="DWECL">DWECL</option>
+                        <option value="DWES">DWES</option>
+                        <option value="HLC">HLC</option>
+                    </select>
+            </label>
+
+                <label> 
+                        <p>Nombre de la tarea:</p>
+                        <input type="text" value="" required>
+                    </label>
+
+                <label>
+                        <p>Descripción de la tarea:</p>
+                        <textarea value="" cols="50" rows="5" ></textarea>
+                    </label>
+
+                <label>
+                        <p>Fecha de entrega:</p>
+                        <input type="date" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                    </label>
+
+                <p id="enviar">
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Francisco Javier Frías Serrano</p>
+    </footer>
+</body>

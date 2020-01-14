@@ -1,0 +1,38 @@
+#main-contacto {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#formulario {
+    border: 1px solid black;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+#formulario>form>label {
+    display: block;
+}
+
+#formulario>form>label>input {
+    margin: 10px;
+}
+
+#formulario>form>label>input:focus {
+    transform: scale(1.5);
+    background-color: rgb(9, 248, 236);
+}
+
+#formulario>form>label>input:focus:invalid {
+    border: 1px solid rgb(255, 0, 0);
+}
+
+#formulario>form>label>input:valid {
+    border: 1.5px solid rgb(10, 175, 10);
+}
+
+p#enviar {
+    text-align: center;
+}
