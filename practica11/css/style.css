@@ -3,7 +3,8 @@
     --secundario-color: #76ff03;
     --bordes-color: rgb(0, 0, 0);
     --texto-primario-color: rgb(0, 0, 0);
-    --iconos-articulos-color: #ffffff;
+    --iconos-articulos-color: #000000;
+    --articulos-color: rgb(233, 233, 14);
 }
 
 body {
@@ -82,13 +83,14 @@ nav ul li ul li ul {
 
 section article {
     border: 1px solid black;
+    background-color: var(--articulos-color);
     margin: 1em;
     padding: 1em;
 }
 
 section article:hover {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px #FF1E00, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    transition-duration: 2s
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(27, 26, 26), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    transition-duration: 1s
 }
 
 
@@ -127,13 +129,11 @@ div.iconos-tarea {
 }
 
 div.iconos-tarea i {
-    color: red;
+    color: var(--iconos-articulos-color);
 }
 
-div#editar {
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+div.iconos-tarea i:hover {
+    transform: scale(1.5);
 }
 
 footer {
