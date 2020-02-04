@@ -1,0 +1,61 @@
+@width: 10px;
+@height: @width + 10px;
+@color: red;
+
+#header {
+  width: @width;
+  height: @height;
+  color: @color;
+}
+
+.bordered {
+    border-top: dotted 1px black;
+    border-bottom: solid 2px black;
+  }
+
+.calcular{
+    // numbers are converted into the same units
+@conversion-1: 5cm + 10mm; // result is 6cm
+@conversion-2: 2 - 3cm - 5mm; // result is -1.5cm
+
+// conversion is impossible
+@incompatible-units: 2 + 5px - 3cm; // result is 4px
+
+// example with variables
+@base: 5%;
+@filler: @base * 2; // result is 10%
+@other: @base + @filler; // result is 15%
+
+@base: 2cm * 3mm; // result is 6cm
+
+@color: #224488 / 2; //results in #112244
+background-color: #112244 + #111; // result is #223355
+
+}
+
+
+  #menu a {
+    color: #111;
+    .post a {
+      color: red;
+      .bordered();
+    }
+    .bordered();
+  }
+  
+
+  .clearfix {
+    display: block;
+    zoom: 1;
+  
+    &:after {
+      content: " ";
+      display: block;
+      font-size: 0;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+  }
+
+  
