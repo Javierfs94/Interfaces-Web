@@ -14,7 +14,7 @@
 }
 
 #formulario-contacto>form>label>input:focus {
-    transform: scale(1.25);
+    transform: scale(1.05);
     background-color: rgb(9, 248, 236);
 }
 

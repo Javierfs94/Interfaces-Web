@@ -148,7 +148,7 @@ article p {
 }
 
 #enlaces-interes a {
-    list-style: none;
+    text-decoration: none;
     color: rgb(226, 21, 21);
 }
 
