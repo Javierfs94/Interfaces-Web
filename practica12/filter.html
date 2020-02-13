@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Práctica 12 de la asignatura de Diseño de Interfaces Web, diseñando una página de alquiler de casas rurales.">
+    <meta name="keywords" content="responsive,casas-rurales,iesgrancapitan,interfaces,diw,2020,diseño-web">
+    <meta name="author" content="Francisco Javier Frías Serrano">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Rural Rent - Francisco Javier Frías Serrano</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1><a href="./main.html">Rural Rent</a></h1>
+        </div>
+        <img class="menu" src="./img/menu-button.svg">
+        <ul>
+            <li><a href="main.html">Mapa</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </header>
+    <div id="filter">
+        <form action="" method="" accept-charset="utf-8">
+            <label><i class="material-icons">home</i>
+								<select class="type-input" name="type">
+									<option value="">Todos los alojamientos &#9660</option>
+									<option value="">Alquiler completo</option>
+									<option value="">Alquiler por habitaciones</option>
+								</select>
+							</label>
+            <p><strong>Precio por persona y noche</strong></p>
+            <select name="price">
+								<option selected="selected" value="">Min</option>
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								<option value="50">50</option>
+								<option value="60">60</option>
+								<option value="70">70</option>
+							</select>
+            <select name="">
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								<option value="50">50</option>
+								<option value="60">60</option>
+								<option value="70">70</option>
+								<option selected="selected" value="">Max</option>
+							</select>
+
+            <p><strong>Características</strong></p>
+            <ul>
+                <li><input type="checkbox" name=""><label>Barbacoa</label></li>
+                <li><input type="checkbox" name=""><label>Chimenea</label></li>
+                <li><input type="checkbox" name=""><label>Jacuzzi</label></li>
+                <li><input type="checkbox" name=""><label>Piscina</label></li>
+            </ul>
+
+            <p><strong>Actividades</strong></p>
+            <ul>
+                <li><input type="checkbox" name=""><label>Bicicleta</label></li>
+                <li><input type="checkbox" name=""><label>Multiaventura</label></li>
+                <li><input type="checkbox" name=""><label>Rutas</label></li>
+                <li><input type="checkbox" name=""><label>Tiro con arco</label></li>
+            </ul>
+
+
+            <div class="buttonsFilter">
+                <button><span>Limpiar</span></button>
+                <a href="./main.html"><button><span>Aplicar</span></button></a>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Francisco Javier Frías Serrano</p>
+        <div id="social-media">
+            <a href="#"><img src="img/github.png" alt="Plataforma de GitHub"></a>
+            <a href="#"><img src="img/twitter.png" alt="Red social de Twitter"></a>
+            <a href="#"><img src="img/linkedin.png" alt="Red social de LinkedIn"></a>
+        </div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+
+    </div>
+</body>
+
+</html>

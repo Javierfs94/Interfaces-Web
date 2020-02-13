@@ -12,105 +12,116 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Práctica 12 - Francisco Javier Frías Serrano</title>
+    <title>Rural Rent - Francisco Javier Frías Serrano</title>
 </head>
 
 <body>
 
     <header>
-
+        <div id="logo">
+            <h1><a href="./main.html">Rural Rent</a></h1>
+        </div>
+        <div id="menu">
+            <img class="menu" src="./img/menu-button.svg">
+            <ul>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
     </header>
-    <nav>
-        <ul></ul>
-    </nav>
-    <section class="home-search">
-        <h3>¿Dónde quieres desconectar?</h3>
-        <form action="" method="" accept-charset="utf-8">
-            <div class="inputsHome">
-
-                <div class="location-input">
-                    <label>
-                            <i class="material-icons">location_on</i>
-                            <input type="text" placeholder="Provincia, localidad..."></label>
-                </div>
-                <div class="people-input">
-                    <label>
-                            <i class="material-icons">people</i>
-                            <input type="text">
-                        </label>
-                </div>
-
-                <div class="fechas">
-                    <label>In<input type="date"></label>
-                    <label>Out<input type="date"></label>
-                </div>
-
-            </div>
-
-            <button type=""><span>Buscar</span></button>
-        </form>
-    </section>
-
-    <aside>
-        <!-- FORMULARIO -->
-        <form action="#" method="post">
-            <i class="material-icons">home</i><select>
-                <option value="todos">Todos los alojamientos</option>
-                <option value="completo">Alquiler completo</option>
-                <option value="habitacion">Alquiler por habitaciones</option>
-              </select>
-
-            <p>Precio por persona y noche</p>
-            <select>
-                <option value="" selected>min</option>
-                <option value="20">20</option>
-                <option value="30">30</option>
-                <option value="40">40</option>
-                <option value="50">50</option>
-                <option value="60">60</option>
-              </select>
-            <select>
-                <option value="20">20</option>
-                <option value="30">30</option>
-                <option value="40">40</option>
-                <option value="50">50</option>
-                <option value="60">60</option>
-                <option value="" selected>max</option>
-              </select>
-            <p>Características</p>
-            <ul>
-                <li><input type="checkbox" name=""><label>B arbacoa</label></li>
-                <li><input type="checkbox" name=""><label> Chimenea</label></li>
-                <li><input type="checkbox" name=""><label> Jacuzzi</label></li>
-                <li><input type="checkbox" name=""><label> Piscina</label></li>
-            </ul>
-            <p>Actividades</p>
-            <ul>
-                <li><input type="checkbox" name=""><label> Bicicleta</label></li>
-                <li><input type="checkbox" name=""><label> Multiaventura</label></li>
-                <li><input type="checkbox" name=""><label> Rutas</label></li>
-                <li><input type="checkbox" name=""><label> Tiro con arco</label></li>
-            </ul>
-
-
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar">
-        </form>
-    </aside>
 
     <main>
+        <section class="home-search">
+            <h3>¿Dónde quieres relajarte?</h3>
+            <form action="" method="" accept-charset="utf-8">
+                <div class="inputsHome">
 
-        <section>
+                    <div class="location-input">
+                        <label>
+                                <i class="material-icons">location_on</i>
+                                <input type="text" placeholder="Provincia, localidad..."></label>
+                    </div>
+                    <div class="people-input">
+                        <label>
+                                <i class="material-icons">people</i>
+                                <input type="text">
+                            </label>
+                    </div>
+
+                    <div class="fechas">
+                        <label>In<input type="date"></label>
+                        <label>Out<input type="date"></label>
+                    </div>
+
+                </div>
+
+                <button type=""><span>Buscar</span></button>
+            </form>
+        </section>
+
+        <aside>
+            <form action="#" method="post">
+                <i class="material-icons">home</i><select>
+                    <option value="todos">Todos los alojamientos</option>
+                    <option value="completo">Alquiler completo</option>
+                    <option value="habitacion">Alquiler por habitaciones</option>
+                  </select>
+
+                <p>Precio por persona y noche</p>
+                <select>
+                    <option value="" selected>min</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                  </select>
+                <select>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="" selected>max</option>
+                  </select>
+                <p>Características</p>
+                <ul>
+                    <li><input type="checkbox" name=""><label> Barbacoa</label></li>
+                    <li><input type="checkbox" name=""><label> Chimenea</label></li>
+                    <li><input type="checkbox" name=""><label> Piscina</label></li>
+                    <li><input type="checkbox" name=""><label> Habitación para no fumadores</label></li>
+                    <li><input type="checkbox" name=""><label> Habitaciones familiares</label></li>
+                    <li><input type="checkbox" name=""><label> Parking</label></li>
+                    <li><input type="checkbox" name=""><label> WiFi Gratis</label></li>
+                </ul>
+                <p>Actividades</p>
+                <ul>
+                    <li><input type="checkbox" name=""><label> Bicicleta</label></li>
+                    <li><input type="checkbox" name=""><label> Senderismo</label></li>
+                    <li><input type="checkbox" name=""><label> Paintball</label></li>
+                    <li><input type="checkbox" name=""><label> Pesca</label></li>
+                    <li><input type="checkbox" name=""><label> Ala Delta</label></li>
+                    <li><input type="checkbox" name=""><label> Golf</label></li>
+                    <li><input type="checkbox" name=""><label> Tirolina</label></li>
+                    <li><input type="checkbox" name=""><label> Tiro con arco</label></li>
+                </ul>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </form>
+        </aside>
+
+        <section class="found">
             <div class="orderBy">
                 <select name="type">
-                <option value="">Precio más alto</option>
-                <option value="">Precio más bajo</option>
-                <option value="">Mejor valorados</option>
-                <option selected="selected" disabled="true">Ordenar por</option>
-        </select>
+                            <option value="">Precio más alto</option>
+                            <option value="">Precio más bajo</option>
+                            <option value="">Mejor valorados</option>
+                            <option selected="selected" disabled="true">Ordenar por</option>
+                    </select>
+                <a href="./filter.html"><button class="btnFiltrar"><span>Filtrar</span></button></a>
             </div>
-            <div id="casas">
-                <a href="./habitacion.html">
+            <div class="houses">
+                <a href="./room.html">
                     <article>
                         <img class="casa-rural" src="./img/casa-rural.jpg">
                         <div>
@@ -123,9 +134,147 @@
                                 </li>
                                 <li>
                                     <i class="material-icons">people</i><strong>2-10</strong>
-                                    <img src="./images/stars.png" id="stars">
-
-                                    <img src="./images/turn-on.svg" class="btnDisconnect">
+                                    <img src="./img/stars.png" id="stars">
+                                </li>
+                                <li><strong class=price>20 €</strong>/noche aprox.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+                <a href="./room.html">
+                    <article>
+                        <img class="casa-rural" src="./img/casa-rural.jpg">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h3 class="name">Nombre del Alojamiento</h3>
+                                </li>
+                                <li>
+                                    <h4 class="place">Localización concreta</h4>
+                                </li>
+                                <li>
+                                    <i class="material-icons">people</i><strong>2-10</strong>
+                                    <img src="./img/stars.png" id="stars">
+                                </li>
+                                <li><strong class=price>20€</strong>/noche</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+                <a href="./room.html">
+                    <article>
+                        <img class="casa-rural" src="./img/casa-rural.jpg">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h3 class="name">Nombre del Alojamiento</h3>
+                                </li>
+                                <li>
+                                    <h4 class="place">Localización concreta</h4>
+                                </li>
+                                <li>
+                                    <i class="material-icons">people</i><strong>2-10</strong>
+                                    <img src="./img/stars.png" id="stars">
+                                </li>
+                                <li><strong class=price>20 €</strong>/noche aprox.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+                <a href="./room.html">
+                    <article>
+                        <img class="casa-rural" src="./img/casa-rural.jpg">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h3 class="name">Nombre del Alojamiento</h3>
+                                </li>
+                                <li>
+                                    <h4 class="place">Localización concreta</h4>
+                                </li>
+                                <li>
+                                    <i class="material-icons">people</i><strong>2-10</strong>
+                                    <img src="./img/stars.png" id="stars">
+                                </li>
+                                <li><strong class=price>20 €</strong>/noche aprox.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+                <a href="./room.html">
+                    <article>
+                        <img class="casa-rural" src="./img/casa-rural.jpg">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h3 class="name">Nombre del Alojamiento</h3>
+                                </li>
+                                <li>
+                                    <h4 class="place">Localización concreta</h4>
+                                </li>
+                                <li>
+                                    <i class="material-icons">people</i><strong>2-10</strong>
+                                    <img src="./img/stars.png" id="stars">
+                                </li>
+                                <li><strong class=price>20 €</strong>/noche aprox.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+                <a href="./room.html">
+                    <article>
+                        <img class="casa-rural" src="./img/casa-rural.jpg">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h3 class="name">Nombre del Alojamiento</h3>
+                                </li>
+                                <li>
+                                    <h4 class="place">Localización concreta</h4>
+                                </li>
+                                <li>
+                                    <i class="material-icons">people</i><strong>2-10</strong>
+                                    <img src="./img/stars.png" id="stars">
+                                </li>
+                                <li><strong class=price>20 €</strong>/noche aprox.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+                <a href="./room.html">
+                    <article>
+                        <img class="casa-rural" src="./img/casa-rural.jpg">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h3 class="name">Nombre del Alojamiento</h3>
+                                </li>
+                                <li>
+                                    <h4 class="place">Localización concreta</h4>
+                                </li>
+                                <li>
+                                    <i class="material-icons">people</i><strong>2-10</strong>
+                                    <img src="./img/stars.png" id="stars">
+                                </li>
+                                <li><strong class=price>20 €</strong>/noche aprox.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+                <a href="./room.html">
+                    <article>
+                        <img class="casa-rural" src="./img/casa-rural.jpg">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h3 class="name">Nombre del Alojamiento</h3>
+                                </li>
+                                <li>
+                                    <h4 class="place">Localización concreta</h4>
+                                </li>
+                                <li>
+                                    <i class="material-icons">people</i><strong>2-10</strong>
+                                    <img src="./img/stars.png" id="stars">
                                 </li>
                                 <li><strong class=price>20 €</strong>/noche aprox.</li>
                             </ul>
@@ -134,21 +283,16 @@
                 </a>
             </div>
         </section>
-
-
-
-
     </main>
 
     <footer>
         <p>Francisco Javier Frías Serrano</p>
-        <div id="redes-sociales">
+        <div id="social-media">
             <a href="#"><img src="img/github.png" alt="Plataforma de GitHub"></a>
             <a href="#"><img src="img/twitter.png" alt="Red social de Twitter"></a>
             <a href="#"><img src="img/linkedin.png" alt="Red social de LinkedIn"></a>
         </div>
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
     </footer>
 </body>
 

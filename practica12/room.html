@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Práctica 12 de la asignatura de Diseño de Interfaces Web, diseñando una página de alquiler de casas rurales.">
+    <meta name="keywords" content="responsive,casas-rurales,iesgrancapitan,interfaces,diw,2020,diseño-web">
+    <meta name="author" content="Francisco Javier Frías Serrano">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Rural Rent - Francisco Javier Frías Serrano</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <h1><a href="./main.html">Rural Rent</a></h1>
+        </div>
+        <div id="menu">
+            <img class="menu" src="./img/menu-button.svg">
+            <ul>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <nav id="nav-room">
+        <ul>
+            <li><a href="./main.html">Inicio</a></li>
+            <li><a href="#description-room">Detalles</a></li>
+            <li><a href="#map">Mapa</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-room">
+        <div id="name-room">
+            <p><a href=""><i class="material-icons">keyboard_arrow_left</i></a></p>
+            <div>
+                <h3>Nombre Alojamiento</h3>
+                <h4>Localización</h4>
+            </div>
+            <p><a href=""><i class="material-icons">keyboard_arrow_right</i></a></p>
+        </div>
+        <div id="room">
+            <div id="img-room">
+                <img src="./img/casa-rural.jpg">
+                <div class='slider'>
+                    <img src="./img/habitacion.jpg" />
+                    <img src="./img/salon.jpg" />
+                    <img src="./img/baño.jpg" />
+                </div>
+
+                <div id="icons-room">
+                    <ul>
+                        <li><i class="material-icons">home</i>
+                            <p>Alquiler Íntegro</p>
+                        </li>
+                        <li><i class="material-icons">people</i>
+                            <p>2-5 pers.</p>
+                        </li>
+                        <li><i class="material-icons">hotel</i>
+                            <p>2 habs.</p>
+                        </li>
+                        <li><i class="material-icons">attach_money</i>
+                            <p>20 €/noche</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-room">
+            <p><a href="./form.html"><button type="button"><span>Reservar</span></button></a>
+            </p>
+            <div class="form">
+                <h4>Reserva</h4>
+                <form action="#">
+                    <div class="input-group">
+                        <label>Nombre y apellido</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Correo</label>
+                        <input type="email" id="correo" required>
+                    </div>
+                    <div class="input-date">
+                        <label>Entrada</label>
+                        <input type="date">
+                        <div><label>Salida</label></div>
+                        <input type="date">
+                    </div>
+                    <div class="input-checkbox">
+                        <input type="checkbox" id="terminos" required>
+                        <label>Acepto los Terminos y Condiciones</label>
+                    </div>
+                    <button type="submit"><label>Enviar</label></button>
+                </form>
+            </div>
+        </div>
+        <div id="description-room">
+            <div class="info">
+                <h4>Servicios y características</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="info">
+                <h4>Actividades</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="info">
+                <h4>Lugares de interés</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+        </div>
+
+        <div id="map">
+            <h4>¿Dónde estamos?</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14963.333268027687!2d-4.80429805700626!3d37.96187988085536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d22ae8e902daae8!2sParque%20Los%20Villares!5e0!3m2!1ses!2ses!4v1580396930065!5m2!1ses!2ses"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Francisco Javier Frías Serrano</p>
+        <div id="social-media">
+            <a href="#"><img src="img/github.png" alt="Plataforma de GitHub"></a>
+            <a href="#"><img src="img/twitter.png" alt="Red social de Twitter"></a>
+            <a href="#"><img src="img/linkedin.png" alt="Red social de LinkedIn"></a>
+        </div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+
+</body>
+
+</html>

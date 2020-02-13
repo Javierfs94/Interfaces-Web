@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Práctica 12 de la asignatura de Diseño de Interfaces Web, diseñando una página de alquiler de casas rurales.">
+    <meta name="keywords" content="responsive,casas-rurales,iesgrancapitan,interfaces,diw,2020,diseño-web">
+    <meta name="author" content="Francisco Javier Frías Serrano">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Rural Rent - Francisco Javier Frías Serrano</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1><a href="./main.html">Rural Rent</a></h1>
+        </div>
+        <img class="menu" src="./img/menu-button.svg">
+        <ul>
+            <li><a href="main.html">Mapa</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="form" id="form">
+            <h4>Reserva</h4>
+            <form action="./lodging.html">
+                <div class="input-group">
+                    <label>Nombre y apellido</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="input-group">
+                    <label>Correo</label>
+                    <input type="email" id="correo" required>
+                </div>
+                <div class="input-date">
+                    <label>Entrada</label>
+                    <input type="date">
+                    <div><label>Salida</label></div>
+                    <input type="date">
+                </div>
+                <div class="input-checkbox">
+                    <input type="checkbox" id="terminos" required>
+                    <label>Acepto los Terminos y Condiciones</label>
+                </div>
+                <button type="submit"><label>Enviar</label></button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Francisco Javier Frías Serrano</p>
+        <div id="social-media">
+            <a href="#"><img src="img/github.png" alt="Plataforma de GitHub"></a>
+            <a href="#"><img src="img/twitter.png" alt="Red social de Twitter"></a>
+            <a href="#"><img src="img/linkedin.png" alt="Red social de LinkedIn"></a>
+        </div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+
+    </div>
+</body>
+
+</html>

@@ -11,14 +11,13 @@ main {
     height: 100%;
 }
 
-#disconnect {
+div#disconnect {
     background-image: url("../img/fondo-rural.jpg");
     background-size: cover;
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    padding-top: 50px;
     text-align: center;
     opacity: 0;
     animation-name: fadeIn;
@@ -27,24 +26,24 @@ main {
     animation-delay: 5s;
 }
 
-#disconnect>h3 p {
+div#disconnect h3 p {
     margin: 1em;
     font-size: 2rem;
     text-align: center
 }
 
-#disconnect>a {
+div#disconnect a {
     display: inline-block;
     width: 5rem;
     height: 5rem;
 }
 
-#disconnect>a>img {
+div#disconnect>a>img {
     width: 5rem;
     height: 5rem;
 }
 
-#text {
+div#text {
     text-align: center;
     margin: 10%;
     animation-delay: 4s;
