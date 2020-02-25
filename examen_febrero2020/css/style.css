@@ -1,0 +1,209 @@
+:root {
+    --Primary-color: #7c4dff;
+    --Primary-Light-Color: #b47cff;
+    --Primary-Dark-Color: #3f1dcb;
+    --Secondary-Color: #aeea00;
+    --Secondary-Light-Color: #e4ff54;
+    --Secondary-Dark-Color: #79b700;
+    --Primary-Text-Color: #000000;
+    --Secondary-Text-Color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto";
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: var(--Primary-Text-Color);
+    opacity: 50%;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--Primary-color);
+}
+
+header a {
+    color: var(--Secondary-Color);
+}
+
+header a:hover {
+    transform: perspective(600px) rotate3d(1.1, 1.1, 60deg);
+    font-size: 60%;
+    color: var(--Secondary-Light-Color);
+}
+
+nav {
+    list-style: none;
+    text-align: center;
+    margin: 1em;
+}
+
+nav ul {
+    background-color: var(--Primary-color);
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav li a {
+    color: var(--Secondary-Text-Color);
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: var(--Secondary-Text-Color);
+    color: var(--Primary-Light-Color);
+}
+
+section {
+    margin: 1em;
+}
+
+section>article,
+aside>section {
+    background-color: var(--Secondary-Text-Color);
+    margin: 1em;
+    padding: 1em;
+}
+
+section>article p,
+aside>section p {
+    text-align: justify;
+    padding-top: 1.5em;
+}
+
+section>article:hover {
+    transform: perspective(600px) rotateY(45deg);
+}
+
+section>article h2 h3 {
+    padding-bottom: 0.5em;
+}
+
+section>article h2 {
+    color: var(--Primary-color);
+}
+
+section>article h3 {
+    padding-top: 1em;
+    color: var(--Primary-Light-Color);
+}
+
+aside {
+    margin: 1em;
+}
+
+#middle-aside,
+#bottom-aside,
+article>h3 {
+    display: none;
+}
+
+aside section h3 {
+    padding-bottom: 0.5em;
+    color: var(--Secondary-Color);
+}
+
+aside>section:hover {
+    transform-origin: 0;
+    transform: rotate(45deg);
+    transition-duration: 3s;
+}
+
+aside>section:hover,
+section>article:hover {
+    box-shadow: 1px 1px 10px 12px var(--Secondary-Light-Color);
+}
+
+footer {
+    background-color: var(--Secondary-Text-Color);
+    margin: 1em;
+    padding: 1em;
+}
+
+
+/* TABLET */
+
+@media (min-width: 830px) {
+    nav {
+        text-align: left;
+        margin: 0;
+    }
+    nav>ul>li {
+        display: inline-block;
+        padding: 1em;
+    }
+    #bottom-aside,
+    article>h3 {
+        display: block;
+    }
+    article>h2:hover {
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+    #container {
+        display: grid;
+        grid-template-areas: "aside" "section";
+    }
+    aside {
+        display: grid;
+        grid-area: aside;
+    }
+    main>section {
+        display: grid;
+        grid-area: section;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0.1em;
+        grid-row-gap: 0.1em;
+    }
+}
+
+
+/* ORDENADOR */
+
+@media (min-width: 1200px) {
+    article>h3 {
+        display: block;
+    }
+    section>article:hover {
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+        transition-duration: 1.5s;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+    #container {
+        display: grid;
+        display: grid;
+        grid-template-areas: 'section aside'
+    }
+    main>section {
+        display: grid;
+        grid-area: section;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 0.1em;
+        grid-row-gap: 0.1em;
+    }
+    aside {
+        display: grid;
+        grid-area: aside;
+    }
+}
