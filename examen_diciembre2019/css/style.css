@@ -1,0 +1,276 @@
+/* 
+a) Primary text color: #1B1D1D
+b) Secondary text color: #FFF
+c) Secondary color: rgb(245,246,246) 80% transparencia
+d) Color mc: #FF7D40
+e) Color Formula1: #FF1E00
+f) Primary color wec: #00236F
+g) Secondary color wec : #5CBB0A
+h) Primary color dakar: #C13A1C
+i) Secondary color dakar: #9F2717
+j) Degradado-dakar-mc-f1: degradado de izquierda a derecha de 
+#C13A1C, #FF7D40, #FF1E00
+k) Degradado-wec: degradado de izquierda a derecha de #00236F a #5CBB0A
+l) Degradado-dakar: degradado de izquierda a derecha de #C13A1C a #9F2717
+ */
+
+:root {
+    --primary-text-color: #1B1D1D;
+    --secondary-text-color: #FFF;
+    --secondary-color: rgba(245, 246, 246, 0.8);
+    --color-mc: #FF7D40;
+    --color-formula1: #FF1E00;
+    --primary-color-wec: #00236F;
+    --secondary-color-wec: #5CBB0A;
+    --primary-color-dakar: #C13A1C;
+    --secondary-color-dakar: #9F2717;
+    --degradado-dakar-mc-f1: linear-gradient(to right, #C13A1C, #FF7D40, #FF1E00);
+    --degradado-wec: linear-gradient(to right, #00236F, #5CBB0);
+    --degradado-dakar: linear-gradient(to right, #C13A1C, #9F2717);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.eot") format("eot"), url("../fonts/Roboto-Regular-webfont.ttf") format("ttf"), url("../fonts/Roboto-Regular-webfont.svg") format("svg");
+}
+
+body {
+    font-size: 16px;
+    color: #1B1D1D;
+    font-family: "Roboto";
+    margin: 1em;
+    text-align: justify;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 40vh;
+    font-size: 1.1rem;
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    color: var(--primary-color-wec);
+}
+
+nav li i:hover {
+    color: var(--secondary-color-wec);
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transform: scale(1.5) rotate(360deg);
+    -moz-transform: scale(1.5) rotate(360deg);
+    -o-transform: scale(1.5) rotate(360deg);
+}
+
+header {
+    background: url(../imagenes/logo_dakar_Grises_alpha.png) no-repeat 97%, url(../imagenes/logo_toyota_nuevo_sinnombre.svg)no-repeat 94%, url(../imagenes/Logo_wec_400x400_alpha.png) no-repeat 78%, url(../imagenes/mclaren-1.svg) no-repeat 25%, url(../imagenes/logo-renault.svg) no-repeat 15%, url(../imagenes/logo_Formula1.svg) no-repeat 5%, var(--degradado-dakar-mc-f1) no-repeat;
+    background-size: 40px, 270px, 140px, 200px, 110px, 110px, 100%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+header h1 {
+    color: #FFF;
+}
+
+header h2 {
+    color: #C13A1C;
+}
+
+#header-izquierda {
+    text-align: left;
+}
+
+#header-centro {
+    text-align: center;
+}
+
+#header-derecha {
+    text-align: right;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#palmares {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding: 1em;
+}
+
+#palmares h3 {
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#palmares:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px var(--color-formula1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    transition-duration: 2s
+}
+
+#palmares img {
+    padding: 1em;
+    width: 500px;
+    height: 250px;
+}
+
+#formula1 {
+    padding: 1rem;
+}
+
+#formula1 h3 {
+    background-color: var(--color-formula1);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#formula1:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px var(--color-formula1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    transition-duration: 2s
+}
+
+#formula1:hover span {
+    color: var(--color-formula1);
+    transition-duration: 2s
+}
+
+#wec {
+    padding: 1rem;
+}
+
+#wec h3 {
+    background-image: linear-gradient(to left, var(--secondary-color-wec), var(--primary-color-wec));
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#wec:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px var(--color-formula1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    transition-duration: 2s
+}
+
+#wec:hover span {
+    color: var(--primary-color-wec);
+    transition-duration: 2s
+}
+
+#dakar {
+    padding: 1rem;
+}
+
+#dakar h3 {
+    background-image: linear-gradient(to left, var(--primary-color-dakar), var(--secondary-color-dakar));
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#dakar:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px var(--color-formula1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    transition-duration: 2s
+}
+
+#dakar:hover span {
+    color: var(--primary-color-dakar);
+    transition-duration: 2s
+}
+
+#modalidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding: 1em;
+}
+
+#modalidades h3 {
+    color: var(--secondary-text-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#modalidades img {
+    align-content: center;
+    width: 100%;
+    height: 250px;
+}
+
+#bicampeon1 {
+    padding: 1em;
+    text-align: center;
+}
+
+#bicampeon1 h3 {
+    background-color: var(--color-formula1);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#bicampeon1 p {
+    text-align: justify;
+}
+
+#bicampeon1:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px var(--color-formula1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    transition-duration: 1s
+}
+
+#bicampeon2 {
+    padding: 1em;
+}
+
+#bicampeon2 h3 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#bicampeon2 p {
+    text-align: justify;
+}
+
+#bicampeon2:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px var(--primary-color-wec), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    transition-duration: 1s
+}
+
+#bicampeon2 h3 {
+    background-image: linear-gradient(to left, var(--secondary-color-wec), var(--primary-color-wec));
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#nuevos-retos {
+    background: url(../imagenes/dakar_alonso_4.jpg) no-repeat;
+    padding: 1em;
+}
+
+#nuevos-retos p {
+    text-align: justify;
+    color: var(--secondary-text-color);
+}
+
+#nuevos-retos h3 {
+    background-image: linear-gradient(to left, var(--primary-color-dakar), var(--secondary-color-dakar));
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#nuevos-retos:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px var(--secondary-color-dakar), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    transition-duration: 1s
+}
