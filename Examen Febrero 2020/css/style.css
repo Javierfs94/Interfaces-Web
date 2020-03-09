@@ -26,20 +26,30 @@ header {
     background-color: var(--Primary-Text-Color);
     opacity: 50%;
     text-align: center;
+    height: 400px;
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+    margin-bottom: 1em;
 }
 
 header h1 {
     color: var(--Primary-color);
+    font-size: 50px;
+    padding: 1em 0.25em 0 0.25em;
 }
 
 header a {
     color: var(--Secondary-Color);
+    font-size: 25px;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
 }
 
 header a:hover {
-    transform: perspective(600px) rotate3d(1.1, 1.1, 60deg);
-    font-size: 60%;
+    transform: rotate(100deg);
     color: var(--Secondary-Light-Color);
+    font-size: 30px;
+    transition-duration: 1.1s;
 }
 
 nav {
@@ -64,10 +74,6 @@ nav li a {
 nav li:hover {
     background-color: var(--Secondary-Text-Color);
     color: var(--Primary-Light-Color);
-}
-
-section {
-    margin: 1em;
 }
 
 section>article,
@@ -98,10 +104,6 @@ section>article h2 {
 section>article h3 {
     padding-top: 1em;
     color: var(--Primary-Light-Color);
-}
-
-aside {
-    margin: 1em;
 }
 
 #middle-aside,
@@ -136,6 +138,9 @@ footer {
 /* TABLET */
 
 @media (min-width: 830px) {
+    header h1 {
+        padding: 3em 0.5em 0 0.5em;
+    }
     nav {
         text-align: left;
         margin: 0;
@@ -178,6 +183,13 @@ footer {
 /* ORDENADOR */
 
 @media (min-width: 1200px) {
+    header h1 {
+        padding: 3em 0.5em 0 0.5em;
+    }
+    nav {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
     article>h3 {
         display: block;
     }
